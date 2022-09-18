@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WEB UI #1</title>
+</head>
+<body>
+	<p id="parag">Задание 1</p>
+	<ol>
+		<li><a href="http://example.com">Абсолютная гиперссылка на example.com</a></li>
+		<li><a href="https://example.com">Абсолютная гиперссылка на example.com в протоколе https</a></li>
+		<li><a href="ftp://ftp.intel.com/readme.txt">ftp сервер сайта Intel (файл readme.txt)</a></li>
+		<li><a href="ftp://user:password@example.com/readme.txt">Ссылку на файл на сервере ftp с авторизацией</a></li>
+		<li><a href="http://vk.com#footer">Ссылка на фрагмент страницы некоторго сайта</a></li>
+		<li><a href="#parag">Ссылка на фрагмент текущей страницы</a></li>
+		<li><a href="http://example.com?color=black&size=m">Ссылка с двумя параметрами url</a></li>
+		<li>
+			<ul>
+				<li><a href="" title="Home">Home</a></li>
+				<li><a href="" title="About">About</a></li>
+				<li><a href="" title="Contacts">Contacts</a></li>
+				<li><a href="" title="Comments">Comments</a></li>
+			</ul>
+		</li>
+		<li><a>Ссылка без href</a></li>
+		<li><a href="">Ссылка с пустым href</a></li>
+		<li><a href="http://example.com" rel="nofollow">Ссылка, по которой запрещён переход поисковикам</a></li>
+		<li><a href="http://example.com" rel="nofollow"><!--noindex-->Ссылка, которая неиндексируется поисковиками<!--/noindex--></a></li>
+		<li><p>Официальную документацию для самостоятельного изучения Bootstrap вы можете найти по адресу <a href="http://getbootstrap.com">http://getbootstrap.com/</a></p></li>
+		<li><a href="http://getbootstrap.com"><img src="7a27ccb9f9a619344b328f6d1a4ccd9c.jpg" alt="Photo"></a></li>
+		<li>
+			<img src="unnamed.jpg" usemap="#rect" alt="Photo">
+			<map name="rect">
+				<area shape="rect" coords="25,25,100,100" href="http://example.com" alt="area">
+				<area shape="circle" coords="190,90,40" href="http://example.com" alt="area">
+			</map>
+		</li>
+		<li><a href="page.html">Ссылка на страницу в текущем каталоге</a></li>
+		<li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
+		<li><a href="../page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+		<li><a href="../../page.html">Относительная на страницу в каталоге двумя уровнями выше текущего</a></li>
+		<li><a href="./index.html">Сокращённая на главную</a></li>
+		<li><a href="/page.html">Сокращённая ссылка на внутреннюю</a></li>
+	</ol>
+	
+	<h2>Форма</h2>
+	<form method="post" action="mailto:mymail@mail.ru">
+		<label for="text">Имя: <br></label>
+		<input type="text" name="text">
+		<br>
+		<br>
+
+		<label for="mail">e-mail: <br></label>
+		<input type="email" name="mail">
+		<br>
+		<br>
+
+		<label for="date">Дата рождения: <br></label>
+		<input type="date" value="2000-01-01" name="date">
+		<br>
+		<br>
+
+		<label>Пол: <br></label>
+		<label>
+			<input type="radio" checked value="value-1" name="people">Мужской
+		</label>
+		<label>
+			<input type="radio" value=" value-2" name="people">Женский
+		</label>
+		<br>
+		<br>
+
+		<label>Количество конечностей: <br></label>
+		<label>
+			<input type="radio" checked value="1" name="hand">1
+		</label>
+		<label>
+			<input type="radio" value="2" name="hand">2
+		</label>
+		<label>
+			<input type="radio" value="3" name="hand">3
+		</label>
+		<label>
+			<input type="radio" value="4" name="hand">4
+		</label>
+		<br>
+		<br>
+
+		<label>Сверхспособности: <br></label>
+		<select name="cool">
+			<option value="value-1">Бессмертие</option>
+			<option value="value-2">Прохождение сквозь стены</option>
+			<option value="value-3">Левитация</option>
+		</select>
+		<br>
+		<br>
+
+		<label>Биография <br></label>
+		<textarea name="field" cols="50" rows="10"></textarea>
+		<br>
+		<br>
+
+		<label for="check">С контрактом ознакомлен </label>
+		<input type="checkbox" name="check">
+		<br>
+		<br>
+
+		<input type="submit" value="Отправить">
+
+		
+	</form>
+</body>
+</html>
