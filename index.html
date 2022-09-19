@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	кодировка meta <="UTF-8">
+	<link rel="stylesheet" href="indez.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<title>WEB UI #2</title>
+</head>
+<body>
+
+	<header id="header">
+		<div class="container">
+			<img src="apple-logo.png" class="logo" alt="logo">
+			<h1 class="site_title">Apple corp.</h1>
+		</div>
+	</header>
+
+	<div class="container">
+		<nav id="navigation">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contacts</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="container">
+		<div id="hyperlinks">
+			<p id="parag">Список гиперссылок</p>
+			<ol>
+				<li><a href="http://example.com">Абсолютная гиперссылка на example.com</a></li>
+				<li><a href="https://example.com">Абсолютная гиперссылка на example.com в протоколе https</a></li>
+				<li><a href="ftp://ftp.intel.com/readme.txt">ftp сервер сайта Intel (файл readme.txt)</a></li>
+				<li><a href="ftp://user:password@example.com/readme.txt">Ссылку на файл на сервере ftp с авторизацией</a></li>
+				<li><a href="http://vk.com#footer">Ссылка на фрагмент страницы некоторго сайта</a></li>
+				<li><a href="#parag">Ссылка на фрагмент текущей страницы</a></li>
+				<li><a href="http://example.com?color=black&size=m">Ссылка с двумя параметрами url</a></li>
+				<li>Основная навигация
+					<ul>
+						<li><a href="" title="Home">Home</a></li>
+						<li><a href="" title="About">About</a></li>
+						<li><a href="" title="Contacts">Contacts</a></li>
+						<li><a href="" title="Comments">Comments</a></li>
+					</ul>
+				</li>
+				<li><a>Ссылка без href</a></li>
+				<li><a href="">Ссылка с пустым href</a></li>
+				<li><a href="http://example.com" rel="nofollow">Ссылка, по которой запрещён переход поисковикам</a></li>
+				<li><a href="http://example.com" rel="nofollow"><!--noindex-->Ссылка, которая неиндексируется поисковиками<!--/noindex--></a></li>
+				<li><p>Официальную документацию для самостоятельного изучения Bootstrap вы можете найти по адресу <a href="http://getbootstrap.com">http://getbootstrap.com/</a></p></li>
+				<li><a href="http://getbootstrap.com"><img src="7a27ccb9f9a619344b328f6d1a4ccd9c.jpg" alt="Photo"></a></li>
+				<li>
+					<img src="unnamed.jpg" usemap="#rect" alt="Photo">
+					<map name="rect">
+						<area shape="rect" coords="25,25,100,100" href="http://example.com" alt="area">
+						<area shape="circle" coords="190,90,40" href="http://example.com" alt="area">
+					</map>
+				</li>
+				<li><a href="page.html">Ссылка на страницу в текущем каталоге</a></li>
+				<li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
+				<li><a href="../page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+				<li><a href="../../page.html">Относительная на страницу в каталоге двумя уровнями выше текущего</a></li>
+				<li><a href="./index.html">Сокращённая на главную</a></li>
+				<li><a href="/page.html">Сокращённая ссылка на внутреннюю</a></li>
+			</ol>
+		</div>
+	</div>
+
+		<table class="container">
+			<tr>
+			    <th colspan="5">Размеры</th>
+			</tr>
+			<tr>
+				<th>Возраст ребёнка</th>
+				<th>Размер США</th>
+				<th>Русский размер</th>
+				<th>Рост</th>
+				<th>Обхват груди</th>
+			</tr>
+			<tr>
+				<td>0 - 2 мес</td>
+				<td>0/3</td>
+				<td>18</td>
+				<td>50 - 56</td>
+				<td>36</td>
+			</tr>
+			<tr>
+				<td>3 мес</td>
+				<td>0/3</td>
+				<td>18</td>
+				<td>56 - 62</td>
+				<td>38</td>
+			</tr>
+			<tr>
+				<td>6 мес</td>
+				<td>3/6</td>
+				<td>20</td>
+				<td>62 - 68</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<td>9 мес</td>
+				<td>6/9</td>
+				<td>22</td>
+				<td>74 - 80</td>
+				<td>44</td>
+			</tr>
+			<tr>
+				<td>12 мес</td>
+				<td>S/M</td>
+				<td>24</td>
+				<td>80 - 86</td>
+				<td>48</td>
+			</tr>
+			<tr>
+				<td>18 мес</td>
+				<td>2 - 2T</td>
+				<td>26</td>
+				<td>86 - 92</td>
+				<td>52</td>
+			</tr>
+			<tr>
+				<td>24 мес</td>
+				<td>2 - 2T</td>
+				<td>28</td>
+				<td>92 - 98</td>
+				<td>54</td>
+			</tr>
+		</table>
+	<br>
+	<div class="container">
+		<h2>Форма</h2>
+		<br>
+		<form action="get">
+			<label>Имя: <br></label>
+			<input type="text">
+			<br>
+			<br>
+
+			<label>e-mail: <br></label>
+			<input type="email">
+			<br>
+			<br>
+
+			<label>Дата рождения: <br></label>
+			<input type="date" value="2003-06-20">
+			<br>
+			<br>
+
+			<label>Пол: <br></label>
+			<label>
+				<input type="radio" value="value-1" name="people">Мужской
+			</label>
+			<label>
+				<input type="radio" checked value=" value-2" name="people">Женский
+			</label>
+			<br>
+			<br>
+
+			<label>Количество конечностей: <br></label>
+			<label>
+				<input type="radio"  value="1" name="hand">1
+			</label>
+			<label>
+				<input type="radio" value="2" name="hand">2
+			</label>
+			<label>
+				<input type="radio" value="3" name="hand">3
+			</label>
+			<label>
+				<input type="radio" value="4" name="hand">4
+			</label>
+			<br>
+			<br>
+
+			<label>Сверхспособности: <br></label>
+			<select name="cool">
+				<option value="value-1">Бессмертие</option>
+				<option value="value-2">Прохождение сквозь стены</option>
+				<option value="value-3">Левитация</option>
+			</select>
+			<br>
+			<br>
+
+			<label>Биография <br></label>
+			<textarea name="field" cols="50" rows="10"></textarea>
+			<br>
+			<br>
+
+			<label for="submit">С контрактом ознакомлен
+			<input type="checkbox" name="submit">
+			</label>
+			<br>
+			<br>
+			<input type="submit" value="Отправить">
+		</form>
+	</div>
+
+	<footer id="footer">
+		(c) Лозгачева Вероника 2022
+	</footer>
+	
+	
+</body>
+</html>
