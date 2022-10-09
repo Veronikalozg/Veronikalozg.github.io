@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="indez.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<title>WEB UI #2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>WEB UI#3</title>
 </head>
 <body>
 
@@ -27,7 +27,8 @@
 
 	<div class="container">
 		<div id="hyperlinks">
-			<p id="parag">Список гиперссылок</p>
+			<h3 id="parag">Список гиперссылок</h3>
+			<br>
 			<ol>
 				<li><a href="http://example.com">Абсолютная гиперссылка на example.com</a></li>
 				<li><a href="https://example.com">Абсолютная гиперссылка на example.com в протоколе https</a></li>
@@ -67,70 +68,68 @@
 		</div>
 	</div>
 
+	<div class="order">
 		<table class="container">
-			<tr>
-			    <th colspan="5">Размеры</th>
-			</tr>
-			<tr>
-				<th>Возраст ребёнка</th>
-				<th>Размер США</th>
-				<th>Русский размер</th>
-				<th>Рост</th>
-				<th>Обхват груди</th>
-			</tr>
-			<tr>
-				<td>0 - 2 мес</td>
-				<td>0/3</td>
-				<td>18</td>
-				<td>50 - 56</td>
-				<td>36</td>
-			</tr>
-			<tr>
-				<td>3 мес</td>
-				<td>0/3</td>
-				<td>18</td>
-				<td>56 - 62</td>
-				<td>38</td>
-			</tr>
-			<tr>
-				<td>6 мес</td>
-				<td>3/6</td>
-				<td>20</td>
-				<td>62 - 68</td>
-				<td>40</td>
-			</tr>
-			<tr>
-				<td>9 мес</td>
-				<td>6/9</td>
-				<td>22</td>
-				<td>74 - 80</td>
-				<td>44</td>
-			</tr>
-			<tr>
-				<td>12 мес</td>
-				<td>S/M</td>
-				<td>24</td>
-				<td>80 - 86</td>
-				<td>48</td>
-			</tr>
-			<tr>
-				<td>18 мес</td>
-				<td>2 - 2T</td>
-				<td>26</td>
-				<td>86 - 92</td>
-				<td>52</td>
-			</tr>
-			<tr>
-				<td>24 мес</td>
-				<td>2 - 2T</td>
-				<td>28</td>
-				<td>92 - 98</td>
-				<td>54</td>
-			</tr>
+			<tr><th colspan="5">Размеры</th></tr>
+				<tr>
+					<th>Возраст ребёнка</th>
+					<th>Размер США</th>
+					<th>Русский размер</th>
+					<th>Рост</th>
+					<th>Обхват груди</th>
+				</tr>
+				<tr>
+					<td>0 - 2 мес</td>
+					<td>0/3</td>
+					<td>18</td>
+					<td>50 - 56</td>
+					<td>36</td>
+				</tr>
+				<tr>
+					<td>3 мес</td>
+					<td>0/3</td>
+					<td>18</td>
+					<td>56 - 62</td>
+					<td>38</td>
+				</tr>
+				<tr>
+					<td>6 мес</td>
+					<td>3/6</td>
+					<td>20</td>
+					<td>62 - 68</td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td>9 мес</td>
+					<td>6/9</td>
+					<td>22</td>
+					<td>74 - 80</td>
+					<td>44</td>
+				</tr>
+				<tr>
+					<td>12 мес</td>
+					<td>S/M</td>
+					<td>24</td>
+					<td>80 - 86</td>
+					<td>48</td>
+				</tr>
+				<tr>
+					<td>18 мес</td>
+					<td>2 - 2T</td>
+					<td>26</td>
+					<td>86 - 92</td>
+					<td>52</td>
+				</tr>
+				<tr>
+					<td>24 мес</td>
+					<td>2 - 2T</td>
+					<td>28</td>
+					<td>92 - 98</td>
+					<td>54</td>
+				</tr>
 		</table>
-	<br>
-	<div class="container">
-		<h2>Форма</h2>
+
+	<div class="container form-block">
 		<br>
 		<form action="get">
 			<label>Имя: <br></label>
@@ -144,23 +143,23 @@
 			<br>
 
 			<label>Дата рождения: <br></label>
-			<input type="date" value="2003-06-20">
+			<input type="date" value="2000-01-01">
 			<br>
 			<br>
 
 			<label>Пол: <br></label>
 			<label>
-				<input type="radio" value="value-1" name="people">Мужской
+				<input type="radio" checked value="value-1" name="people">Мужской
 			</label>
 			<label>
-				<input type="radio" checked value=" value-2" name="people">Женский
+				<input type="radio" value=" value-2" name="people">Женский
 			</label>
 			<br>
 			<br>
 
 			<label>Количество конечностей: <br></label>
 			<label>
-				<input type="radio"  value="1" name="hand">1
+				<input type="radio" checked value="1" name="hand">1
 			</label>
 			<label>
 				<input type="radio" value="2" name="hand">2
@@ -184,20 +183,21 @@
 			<br>
 
 			<label>Биография <br></label>
-			<textarea name="field" cols="50" rows="10"></textarea>
+			<textarea name="field" rows="10"></textarea>
 			<br>
 			<br>
 
-			<label for="submit">С контрактом ознакомлен
-			<input type="checkbox" name="submit">
-			</label>
+			<label>С контрактом ознакомлен </label>
+			<input type="checkbox">
 			<br>
 			<br>
 			<input type="submit" value="Отправить">
 		</form>
 	</div>
+	</div>
 
 	<footer id="footer">
+
 		(c) Лозгачева Вероника 2022
 	</footer>
 	
