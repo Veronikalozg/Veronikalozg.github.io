@@ -11,75 +11,25 @@ ul {
 	list-style: none;
 }
 
-a {
-	text-decoration: none;
-	transition: 0.3s ease-in-out;
-	color: black;
-}
-
-a:active {
-	color: #c27826;
-}
-
-a:hover {
-	border-bottom: 2px solid black;
-	border-color: #c27826;
-}
-
-input[type="submit"] {
-	padding: 5px 15px;
-	border-radius: 7px;
-}
 
 #header, #hyperlinks, #navigation, #footer, form {
 	background-color: #d7d7d6;
 }
 
-#header, #hyperlinks, #navigation, form {
-	margin-bottom: 30px;
-}
-
-#header {
-	padding: 15px;
-}
-
 #navigation {
-	padding: 15px;
+	font-size: 20px;
 }
 
-.container {
-	overflow: hidden;
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 0;
+.nav li a, form, #footer {
+	font-size: 18px;
 }
 
 .logo {
-	width: 8em;
-	float: left;
-	margin-right: 15px;
+	width: 6em;
 }
 
 .site_title {
-	padding-top: 2em;
-	font-size: 30px;
-}
-
-#navigation ul {
-	display: flex;
-	flex-direction: column;
-}
-
-#navigation ul li a {
-	font-size: 20px
-}
-
-#hyperlinks {
-	padding: 35px;
-}
-
-#hyperlinks img {
-	width: 200px;
+	font-size: 28px;
 }
 
 table {
@@ -87,6 +37,8 @@ table {
 	text-align: center;
 	border: 1px solid black;
 	border-collapse: collapse;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 td, th {
@@ -102,20 +54,8 @@ tr:nth-child(even) {
 }
 
 form {
-	padding: 15px;
-}
-
-.form {
-	margin: 15px;
-}
-
-.order {
-	display: flex;
-	flex-direction: column;
-}
-
-.form-block {
-	order: -1;
+	width: 100%;
+	text-align: center;
 }
 
 textarea {
@@ -123,71 +63,33 @@ textarea {
 	max-width: 400px;
 }
 
-footer {
-	margin-top: 30px;
-	padding: 15px;
-}
-
-/*Media*/
-@media (min-width: 480px) {
-	#navigation ul {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	#navigation ul li a {
-		font-size: 22px
-	}
-	
-	.order {
-		display: block;
-	}
-
-	.form-block {
-		order: 0;
-	}
-
-	table {
-		margin: 0 auto;
-	}
-
-	textarea {
-		width: 70%
-	}
-
-	td, th {
-		padding: 5px;
-	}
-
-	#footer {
-		margin-top: 0;
-	}
-
-	#hyperlinks {
-		font-size: 20px;
-	}
-}
-
 @media (min-width: 768px) {
-	#footer {
-		padding: 30px 15px;
-		font-size: 20px;
-	}
 	table {
 		font-size: 18px;
 	}
-	td, th {
-		padding: 10px 20px;
-	}
-
-	#navigation ul li a {
-		font-size: 26px
-	}
 	.site_title {
-		padding-top: 50px;
-		font-size: 40px;
+		font-size: 32px;
 	}
-	form {
+	.nav li a, form, #footer {
+		font-size: 18px;
+	}
+	#navigation {
 		font-size: 20px;
 	}
 }
+
+@media (min-width: 1024px) {
+	table {
+		font-size: 18px;
+	}
+	.site_title {
+		font-size: 34px;
+	}
+	.nav li a, form, #footer {
+		font-size: 20px;
+	}
+	#navigation {
+		font-size: 22px;
+	}
+}
+
