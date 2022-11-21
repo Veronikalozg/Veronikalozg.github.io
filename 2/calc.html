@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Наш интернет-магазин является лидером среди магазинов, продающих одежду из Морокко. Наш выбор огромное количество моделей всех размеров. Мы рады каждому посетителю!">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Одежда из Морокко</title>
+</head>
+<body>
+	<!--Header-->
+	<header id="header">
+		<div class="container">
+			<!--Navigation-->
+			<nav id="navigation">
+				<div class="logo">
+					Одежда из Морокко
+				</div>
+				<ul class="menu">
+					<li><a href="index.html">Домашняя</a></li>
+					<li><a href="">Мужчинам</a></li>
+					<li><a href="">Женщинам</a></li>
+					<li><a href="">Блог</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="form.html">Подписаться</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!--Header-content-->
+		<div id="header-content">
+			<div class="container">
+				<h1>Одежда из Морокко</h1>
+				<p>Наш магазин предоставляет огромный выбор одежды из Морокко. Мы являемся лидерами на Северо-Западе Африки.</p>
+				<a href="calc.html" class="red-button">Купить сейчас</a>
+			</div>
+		</div>
+	</header>
+
+	<!--Calc-->
+	<section id="calc">
+		<div class="container">
+			<h2 class="title">Закажите товар прямо сейчас</h2>
+			<p class="under-title">Успей купить по выгодной цене</p>
+			<div class="form">
+				<label>Выберете количество товара:</label>
+				<input type="number" id="number" min="1" value="1">
+
+				<label>Выберете тип товара:</label>
+				<select name="productType">
+					<option value="1">Платье из кашемира</option>
+					<option value="2">Пиджак с разрезами на рукавах</option>
+					<option value="3">Вечернее платье телесного цвета</option>
+					<option value="4">Часы стиля Casual</option>
+					<option value="5">Белое платье средней длины</option>
+					<option value="6">Платье с драконом</option>
+					<option value="7">Джинсовые шорты с подворотами</option>
+					<option value="8">Офисное платье миди</option>
+					<option value="9">Летнее платье mini</option>
+				</select>
+
+				<div id="radios">
+					<label>Выберете дополнительные опции:</label>
+					<label><input type="radio" value="option1" name="productOptions">Доставка курьером до двери</label>
+					<label><input type="radio" value="option2" name="productOptions">Доставка в почтовое отделение</label>
+					<label><input type="radio" value="option3" name="productOptions">Самовывоз</label>
+				</div>
+				
+				<div id="checkboxes">
+					<label>Выберете дополнительное свойство:</label>
+					<label><input type="checkbox" value="properties" name="properties">Примерка на дому</label>
+				</div>
+			</div>
+			<div class="result">
+				<label>Итого: </label>
+				<label id="productPrice"></label>
+				<button>Заказать</button>
+			</div>
+		</div>
+	</section>
+
+	<!--Footer-->
+	<footer id="footer">
+		<div class="container">
+			<nav class="footer-navigation">
+				<ul>
+					<li><a href="">Ваш аккаунт</a></li>
+					<li><a href="about.html">Контакты</a></li>
+					<li><a href="">Условия</a></li>
+				</ul>
+			</nav>
+			<ul class="social">
+				<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+			</ul>
+			<p class="copyright">Copyright © 2019 Одежда из Морокко. Все права зарезервированы. Дизайн сделан Святославом Шубиным</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/calc.js"></script>
+	<script src="https://use.fontawesome.com/323281a41a.js"></script>
+</body>
+</html>
