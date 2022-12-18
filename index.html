@@ -217,6 +217,51 @@
 <div id="rezult"></div>
 </form>
 </div>
+	<div class="tabs order-3 mt-lg-3 mb-3 mb-lg-0 text-center">
+<form id="dices">
+<label>Слоты:</label><br>
+<select name="dice">
+<option value="noDice">Не выбрано</option>
+<option value="1">d4 (30 рублей)</option>
+<option value="2">d6 (30 рублей)</option>
+<option value="3">d8 (30 рублей)</option>
+<option value="d10">d10 (30 рублей)</option>
+<option value="4">d12 (30 рублей)</option>
+<option value="5">d20 (30 рублей)</option>
+<option value="d100">Набор (7 слотов) (200 рублей)</option>
+</select>
+
+<div id="d10Dice">
+<label>Вариация d10:</label><br>
+<label><input type="checkbox" name="varDice">Единицы</label>
+<label><input type="checkbox" name="varDice">Десятки</label>
+</div>
+
+<div id="radioDice">
+<label>Материал (цена за слот):</label><br>
+<label><input type="radio" value="clear1" name="mater">Пластик (без наценки)</label>
+<label><input type="radio" value="clear2" name="mater">Эпоксидная смола (+10)</label>
+<label><input type="radio" value="clear3" name="mater">Дерево (+20)</label>
+<label><input type="radio" value="clear4" name="mater">Металл (+50)</label>
+<label><input type="radio" value="clear5" name="mater">Душа суслика (+100)</label>
+</div>
+
+<div id="sacDice">
+<label>Дополнительно:</label><br>
+<label><input type="checkbox" id="sacCube"> Мешочек (+250)</label>
+</div>
+
+<div id="mid">
+<label>Количество: <br></label>
+<center><input class="mt-1 form-control col-3" name="colDice" type="text"></center>
+<br>
+
+</div>
+
+<div id="rezultDice"></div>
+</form>
+</div>
+
 	<footer id="footer" class="container-fluid p-4">
 
 
