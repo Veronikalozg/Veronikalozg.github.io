@@ -92,4 +92,6 @@ textarea {
 		font-size: 22px;
 	}
 }
-
+#radioDice , #sacDice, #d10Dice, #mid{
+display: none;
+}
