@@ -171,5 +171,5 @@ window.addEventListener("DOMContentLoaded", function () {
             }); 
         }
     });
-});
+}); 
 
