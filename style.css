@@ -21,32 +21,11 @@ header {
     transition: 0.4s ease-in-out;
 }
 
-/*ссылки*/
-#hyperlinks {
-    background-color: #00ffd2;
-    transition: 0.8s ease-in-out;
-    border: 5px solid black;
+
+#header, #hyperlinks, #navigation, #footer, form {
+	background-color: #d7d7d6;
 }
 
-#hyperlinks:hover {
-    background-color: white;
-}
-
-#hyperlinks li{
-    transition: 0.5s ease-in-out;
-}
-
-#hyperlinks li:hover {
-    background-color: #00ffd2;
-}
-
-
-/*дно*/
-#footer {
-    border-top: 5px solid black;
-    background-color: black;
-    color: #00ffd2;
-}
 
 table {
 	font-size: 14px;
