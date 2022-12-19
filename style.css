@@ -97,35 +97,67 @@ th:hover{
 #slidelinks {
     background-color: #fd0130;
 }
-/*слайдер*/
-#slidelinks img{
-    border: 7px solid #fd0130;
-}
-/*прочее*/
-
-a {
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    color: black;
+.site_title {
+	font-size: 28px;
 }
 
-a:hover {
-    text-decoration: none;
-    color: #fd0130;
+table {
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
-.btnf button {
-    background-color: #ece302;
-    border: 3px solid black;
-    color: black;
+td, th {
+	padding: 5px;
 }
 
-.btnf button:hover {
-    background-color: #f8ee03;
-    border: 3px solid black;
-    color: black;
+tr:nth-child(odd) {
+	background-color: #c99be9;
 }
 
-#radioDice , #sacDice, #d10Dice, #mid{
-	display: none;
+tr:nth-child(even) {
+	background-color: #d7d7d6;
+}
+
+form {
+	width: 100%;
+	text-align: center;
+}
+
+textarea {
+	width: 100%;
+	max-width: 400px;
+}
+
+@media (min-width: 768px) {
+	table {
+		font-size: 18px;
+	}
+	.site_title {
+		font-size: 32px;
+	}
+	.nav li a, form, #footer {
+		font-size: 18px;
+	}
+	#navigation {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	table {
+		font-size: 18px;
+	}
+	.site_title {
+		font-size: 34px;
+	}
+	.nav li a, form, #footer {
+		font-size: 20px;
+	}
+	#navigation {
+		font-size: 22px;
+	}
 }
