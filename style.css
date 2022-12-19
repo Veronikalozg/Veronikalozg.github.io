@@ -111,7 +111,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #fd0120;
+    color: #fd0130;
 }
 
 .btnf button {
@@ -123,7 +123,7 @@ a:hover {
 .btnf button:hover {
     background-color: #f8ee03;
     border: 3px solid black;
-    color: green;
+    color: black;
 }
 
 #radioDice , #sacDice, #d10Dice, #mid{
