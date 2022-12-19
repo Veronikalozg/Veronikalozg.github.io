@@ -40,65 +40,12 @@ header {
     background-color: #00ffd2;
 }
 
-/*форма*/
-
-form {
-    background-color: #00ffd2;
-    border: 5px solid black;
-}
-
 
 /*дно*/
 #footer {
     border-top: 5px solid black;
     background-color: black;
     color: #00ffd2;
-}
-
-/*таблица*/
-
-table {
-    border-collapse: collapse;
-    border: 5px solid #fd0130;
-}
-
-#tt{
-    background-color: #fd0130;
-}
-
-#hyperlinks li.nocolor:hover{
-background-color: white;
-}
-
-#hyperlinks li.nocolor{
-    transition: 10.0s ease-in-out;
-    }
-
-th, td{
-    transition: 0.8s ease-in-out;
-}
-
-tr:nth-child(odd) {
-    background-color: #ece302;
-}
-
-tr:nth-child(even) {
-    background-color: #f8ee03;
-}
-
-td:hover{
-    background-color: #fd0130;
-}
-
-th:hover{
-    background-color: #fd0130;
-}
-
-#slidelinks {
-    background-color: #fd0130;
-}
-.site_title {
-	font-size: 28px;
 }
 
 table {
