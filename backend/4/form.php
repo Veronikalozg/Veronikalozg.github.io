@@ -1,6 +1,6 @@
 <style>
 body{
-    background-color: #fcee0a;
+    background-color: #000080;
     display: flex;
     justify-content:center;
     margin-top:5%;
@@ -10,7 +10,7 @@ body{
     padding: 40px;
     width: 250px;
     background-color: #00ffd2;
-    border: 2px solid #fd0130;
+    border: 2px solid# FF00FF;
 }
 
 h1{
@@ -22,7 +22,7 @@ h1{
     margin:2%;
     padding: 5%;
     border: 1px solid;
-    border-color: #fd0130;
+    border-color: #00FF00;
     border-radius: 3px;
 }
 .error {
