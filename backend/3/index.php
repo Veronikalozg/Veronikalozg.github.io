@@ -85,4 +85,4 @@ catch(PDOException $e){
 }
 
 print_r("Данные отправлены в бд");
-?>
+?>.
