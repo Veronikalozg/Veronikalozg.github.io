@@ -54,7 +54,7 @@ else {
   $uid=0;
   $error=TRUE;
   $user = 'u54428';
-  $pass = '3293602';
+  $pass = '3293603';
   $db1 = new PDO('mysql:host=localhost;dbname=u54428', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
   if(!empty($login) and !empty($pswrd)){
     try{
